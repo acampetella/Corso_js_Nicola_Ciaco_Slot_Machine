@@ -1,0 +1,222 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+div.result {
+  width: 70%;
+}
+
+span#result {
+  display: block;
+  padding: 10px;
+  align-text: center;
+  margin-top: 40px;
+  font-size: 2rem;
+}
+
+.slot-machine {
+  margin-top: 20px;
+}
+
+.machine {
+  width: 406px;
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  border: 5px solid rgba(128, 128, 128, 0.5);
+  box-shadow: 0 0 0 5px black;
+  overflow: hidden;
+}
+
+.numbers {
+  width: 100px;
+  height: 50px;
+  border-right: 3px solid white;
+  position: relative;
+  animation: numberAnimation 2s steps(50);
+  animation-play-state: paused;
+}
+
+.numbers:last-child {
+  border-right: none;
+}
+
+.number {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: cyan;
+  text-align: center;
+  line-height: 50px;
+  font-size: 2rem;
+  position: absolute;
+}
+
+.number:nth-child(1) {
+  top: 0%;
+}
+
+.number:nth-child(2) {
+  top: 100%;
+}
+
+.number:nth-child(3) {
+  top: 200%;
+}
+
+.number:nth-child(4) {
+  top: 300%;
+}
+
+.number:nth-child(5) {
+  top: 400%;
+}
+
+.number:nth-child(6) {
+  top: 500%;
+}
+
+.number:nth-child(7) {
+  top: 600%;
+}
+
+.number:nth-child(8) {
+  top: 700%;
+}
+
+.number:nth-child(9) {
+  top: 800%;
+}
+
+.number:nth-child(10) {
+  top: 900%;
+}
+
+.under-machine {
+  width: 406px;
+  margin: 0 auto;
+  margin-top: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.under-machine span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.under-machine input {
+  width: 70%;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 1.2rem;
+  border: 5px solid black;
+  border-radius: 4px;
+}
+
+.under-machine button {
+  margin: 0 auto;
+  margin-top: 30px;
+  min-width: 80px;
+  font-size: 1.2rem;
+  padding: 10px 15px;
+  background-color: black;
+  border: 1px solid #17f1fd;
+  border-radius: 5px;
+  color: cyan;
+  text-transform: uppercase;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.under-machine button:hover {
+  background-color: #17f1fd;
+  color: black;
+  font-weight: bold;
+  border-color: black;
+}
+
+.animation-start {
+  animation-play-state: running;
+}
+
+.animation-stop {
+  animation-play-state: paused;
+}
+
+.animation-forwards {
+  animation-fill-mode: forwards;
+}
+
+.animation-reset {
+  animation-name: none;
+}
+
+.error {
+  color: red;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.display {
+  opacity: 1;
+}
+
+.defeat {
+  color: red;
+  border: 2px solid red;
+}
+
+.victory {
+  color: green;
+  border: 2px solid green;
+}
+
+/* animazioni */
+
+@keyframes numberAnimation {
+  11.1% {
+    transform: translateY(-100%);
+  }
+
+  22.2% {
+    transform: translateY(-200%);
+  }
+
+  33.3% {
+    transform: translateY(-300%);
+  }
+
+  44.4% {
+    transform: translateY(-400%);
+  }
+
+  55.5% {
+    transform: translateY(-500%);
+  }
+  66.6% {
+    transform: translateY(-600%);
+  }
+
+  77.7% {
+    transform: translateY(-700%);
+  }
+
+  88.8% {
+    transform: translateY(-800%);
+  }
+
+  100% {
+    transform: translateY(-900%);
+  }
+}

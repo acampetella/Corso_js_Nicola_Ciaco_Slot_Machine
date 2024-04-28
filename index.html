@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Slot Machine</title>
+    <link rel="stylesheet" href="./src/css/slotMachine.css" />
+    <script src="./src/js/slotMachine.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section class="slot-machine">
+        <div class="machine">
+          <div class="numbers">
+            <div class="number"><span>0</span></div>
+            <div class="number"><span>1</span></div>
+            <div class="number"><span>2</span></div>
+            <div class="number"><span>3</span></div>
+            <div class="number"><span>4</span></div>
+            <div class="number"><span>5</span></div>
+            <div class="number"><span>6</span></div>
+            <div class="number"><span>7</span></div>
+            <div class="number"><span>8</span></div>
+            <div class="number"><span>9</span></div>
+          </div>
+          <div class="numbers">
+            <div class="number"><span>0</span></div>
+            <div class="number"><span>1</span></div>
+            <div class="number"><span>2</span></div>
+            <div class="number"><span>3</span></div>
+            <div class="number"><span>4</span></div>
+            <div class="number"><span>5</span></div>
+            <div class="number"><span>6</span></div>
+            <div class="number"><span>7</span></div>
+            <div class="number"><span>8</span></div>
+            <div class="number"><span>9</span></div>
+          </div>
+          <div class="numbers">
+            <div class="number"><span>0</span></div>
+            <div class="number"><span>1</span></div>
+            <div class="number"><span>2</span></div>
+            <div class="number"><span>3</span></div>
+            <div class="number"><span>4</span></div>
+            <div class="number"><span>5</span></div>
+            <div class="number"><span>6</span></div>
+            <div class="number"><span>7</span></div>
+            <div class="number"><span>8</span></div>
+            <div class="number"><span>9</span></div>
+          </div>
+          <div class="numbers">
+            <div class="number"><span>0</span></div>
+            <div class="number"><span>1</span></div>
+            <div class="number"><span>2</span></div>
+            <div class="number"><span>3</span></div>
+            <div class="number"><span>4</span></div>
+            <div class="number"><span>5</span></div>
+            <div class="number"><span>6</span></div>
+            <div class="number"><span>7</span></div>
+            <div class="number"><span>8</span></div>
+            <div class="number"><span>9</span></div>
+          </div>
+        </div>
+        <div class="under-machine">
+          <span>Scegli un numero tra 0 e 9</span>
+          <input type="number" placeholder="Inserisci numero" min="0" max="9">
+          <small class="error hide">Errore. Inserire un numero intero tra 0 e 9</small>
+          <button id="play" class="pointer">Gioca</button>
+          <div class="result"><span id="result"></span></div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
